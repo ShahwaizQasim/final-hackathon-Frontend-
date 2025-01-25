@@ -6,6 +6,8 @@ import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 import Login from './pages/Auth/login';
 import SignupForm from './pages/Auth/signup';
+import LoanRequestForm from './pages/LoanForm/loanForm';
+import LoanForm from './pages/LoanForm/loanForm';
 
 
 function App() {
@@ -18,8 +20,10 @@ function App() {
     <>
       <Routes>
         <Route path='/signUp' element={<SignupForm />} />
-        <Route path='/signIn' element={user ? <Navigate to={'/'} /> : <Login /> } />
+        <Route path='/signIn' element={user ? <Navigate to={'/'} /> : <Login />} />
         <Route path='/' element={!user ? <Navigate to={'/signIn'} /> : <Home />} />
+        {/* <Route path='/loanForm' element={!user ? <Navigate to={'/signIn'} /> : <LoanForm/>} /> */}
+        <Route path='/loanForm' element={<LoanForm />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
 
