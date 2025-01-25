@@ -2,7 +2,7 @@
 
 
 const dev = `http://localhost:3000/`;
-const prod = `https://backend-learning-rho.vercel.app/`
+const prod = `https://final-hackathon-backend-eight.vercel.app/`
 
 export const BASE_URL = prod;
 
