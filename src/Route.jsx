@@ -1,13 +1,11 @@
 import './App.css'
 import { Navigate, Outlet, Route, Routes } from "react-router";
-import Signup from './pages/Auth/signup';
-import Login from './pages/Auth/login';
 import Home from './pages/home'
 import NotFound from './pages/NotFound';
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
-import Navbar from './components/navbar'
-import Footer from './components/footer';
+import Login from './pages/Auth/login';
+import SignupForm from './pages/Auth/signup';
 
 
 function App() {
@@ -19,8 +17,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/signUp' element={<Signup />} />
-        <Route path='/signIn' element={user ? <Navigate to={'/'} /> : <Login />} />
+        <Route path='/signUp' element={<SignupForm />} />
+        <Route path='/signIn' element={user ? <Navigate to={'/'} /> : <Login /> } />
         <Route path='/' element={!user ? <Navigate to={'/signIn'} /> : <Home />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
