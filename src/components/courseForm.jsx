@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { APP_ROUTES, BASE_URL } from '../constant/AppRoutes';
 import Cookies from 'js-cookie';
-import Card from './card';
+import Card from './weddingCard';
 
 function CourseForm() {
 
