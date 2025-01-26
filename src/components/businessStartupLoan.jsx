@@ -3,10 +3,10 @@ import React from 'react'
 function BusinessStartUp() {
 
     return (
-        <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="p-4 md:w-1/3 card">
+            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden card">
                 <img
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    className="lg:h-64 md:h-36 w-full object-cover object-center img"
                     src={'https://www.upflip.com/wp-content/uploads/2024/09/Smiling-startup-business-owner.png'}
                     alt="blog"
                 />

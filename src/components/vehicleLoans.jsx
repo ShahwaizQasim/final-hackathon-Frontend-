@@ -1,24 +1,24 @@
 import React from 'react'
 
-function EducationLoan() {
+function VehicleLoans() {
 
     return (
         <div className="p-4 md:w-1/3 card">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                     className="lg:h-64 md:h-36 w-full object-cover object-center img"
-                    src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-R_uMyHZ_GLUgOmCHBYy7XGTzoH1DSA9fgw&s'}
+                    src={'https://www.icicibank.com/content/dam/icicibank/india/managed-assets/images/blog/improve-credit-score-for-car-loan-d.webp'}
                     alt="blog"
                 />
                 <div className="p-6">
                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                        Education Loans
+                        Vehicle Loans
                     </h1>
                     <p className="leading-relaxed mb-3">
                         <ul className='text-[14px]'>
-                            <li>Subcategories: University Fees, Child Fees Loan</li>
+                            <li> Subcategories: Bike, Small Car, Commercial Vehicle</li>
                             <li>Maximum loan: Based on requirement</li>
-                            <li>Loan period: 4 years</li>
+                            <li>Loan period: 5 years</li>
                         </ul>
                     </p>
                     <div className="flex items-center flex-wrap ">
@@ -51,4 +51,4 @@ function EducationLoan() {
     )
 }
 
-export default EducationLoan
+export default VehicleLoans

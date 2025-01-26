@@ -3,10 +3,10 @@ import React from 'react'
 function WeddingCard() {
 
     return (
-        <div className="p-4 md:w-1/3">
+        <div className="p-4 md:w-1/3 card">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    className="lg:h-64 md:h-36 w-full object-cover object-center img"
                     src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVk3sWLC9XdDW9qD_3eR3jXcXFrikwGaOTBg&s'}
                     alt="blog"
                 />

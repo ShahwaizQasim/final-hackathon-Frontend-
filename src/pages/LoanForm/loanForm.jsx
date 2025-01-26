@@ -6,6 +6,9 @@ import Card from "../../components/weddingCard";
 import WeddingCard from "../../components/weddingCard";
 import ConstructionLoan from "../../components/constructionLoan";
 import BusinessStartUp from "../../components/businessStartupLoan";
+import EducationLoan from "../../components/EducationLoan";
+import VehicleLoans from "../../components/vehicleLoans";
+import HouseHoldLoans from "../../components/householdLoan";
 
 function LoanForm() {
     const {
@@ -111,11 +114,13 @@ function LoanForm() {
                         </button>
                     </form>
                 </div>
-                <div className="flex flex-wrap m-4">
+                <div className=" container flex flex-wrap m-4">
                     <WeddingCard />
-                    <ConstructionLoan/>
-                    <BusinessStartUp/>
-                    <Card />
+                    <ConstructionLoan />
+                    <BusinessStartUp />
+                    <EducationLoan />
+                    <VehicleLoans />
+                    <HouseHoldLoans />
                 </div>
             </div>
 

@@ -3,10 +3,10 @@ import React from 'react'
 function ConstructionLoan() {
 
     return (
-        <div className="p-4 md:w-1/3">
+        <div className="p-4 md:w-1/3 card">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    className="lg:h-64 md:h-36 w-full object-cover object-center img"
                     src={'https://getmoneyrich.com/wp-content/uploads/2013/08/Home-Construction-Loan-image.jpg'}
                     alt="blog"
                 />
