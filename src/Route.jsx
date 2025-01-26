@@ -8,6 +8,11 @@ import Login from './pages/Auth/login';
 import SignupForm from './pages/Auth/signup';
 import LoanRequestForm from './pages/LoanForm/loanForm';
 import LoanForm from './pages/LoanForm/loanForm';
+import AdminPanel from './pages/Admin/adminpanel';
+import Dashboard from './pages/Admin/dashboard';
+import UserProducts from './pages/Admin/userProducts';
+import ViewUsers from './pages/Admin/viewUsers';
+import ViewOrders from './pages/Admin/vieworders';
 
 
 function App() {
@@ -25,6 +30,14 @@ function App() {
         {/* <Route path='/loanForm' element={!user ? <Navigate to={'/signIn'} /> : <LoanForm/>} /> */}
         <Route path='/loanForm' element={<LoanForm />} />
         <Route path='*' element={<NotFound />} />
+
+        <Route path="/adminPanel" element={<AdminPanel />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="viewUsers" element={<ViewUsers />} />
+          <Route path="viewOrders" element={<ViewOrders />} />
+          <Route path="viewProducts" element={<UserProducts />} />
+        </Route>
+
       </Routes>
 
     </>
