@@ -31,6 +31,7 @@ function Login() {
             setLoading(false);
         } catch (error) {
             console.log("Error", error);
+            toast.success(error.message);
             setLoading(false);
         }
     };

@@ -11,9 +11,13 @@ export default function AuthContextProvider({ children }) {
 
     const [user, setUser] = useState(null);
 
+    console.log(user);
+    
     useEffect(() => {
         if (!user) {
             const token = Cookies.get('token');
+            console.log(token);
+            
             if (token) {
                 getUser(token);
             } else {
@@ -29,7 +33,7 @@ export default function AuthContextProvider({ children }) {
                     Authorization: `Bearer ${token}`
                 }
             })
-            setUser(user?.data?.user)
+            setUser(user?.data?.data)
         } catch (error) {
             console.log('error in context=>', error);
         }

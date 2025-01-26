@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import SaylaniLogo from '../../assets/img/saylaniLogo.png'
 import Navbar from "../../components/navbar";
-import Card from "../../components/weddingCard";
 import WeddingCard from "../../components/weddingCard";
 import ConstructionLoan from "../../components/constructionLoan";
 import BusinessStartUp from "../../components/businessStartupLoan";
